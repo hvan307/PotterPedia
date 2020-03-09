@@ -1,0 +1,76 @@
+html {
+  background-color: black;
+  }
+
+
+.Hero {
+  font-family: 'Macondo Swash Caps', cursive;
+  .hero-body {
+    background-image: url('https://media.giphy.com/media/1ykBr9s2NevYs/giphy.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    h1 {
+      color: rgba(255, 255, 255, 0.582);
+    }
+    
+    
+    span {
+        animation:blinkingText 0.8s infinite;
+      }
+      @keyframes blinkingText{
+        0%{		color: white;	}
+        49%{	color: transparent;	}
+        50%{	color: transparent;	}
+        99%{	color: transparent;	}
+        100%{	color: white;	}
+      }
+    }
+}
+
+
+.navbar-item {
+  .button {
+    background-color: black;
+  }
+}
+
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: black;
+    color: white;
+    
+  }
+  .card-header {
+    font-family: 'Macondo Swash Caps', cursive;
+    padding: 10px;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.438);
+  }
+  .card-content {
+    font-family: 'Courier New', Courier, monospace;
+    span {
+      font-weight: bold;
+    }
+  }
+
+
+.Circles {
+text-align: center;
+}
+
+.SearchForm {
+  .input {
+    color: white;
+    background-color: rgba(1, 1, 1, 0.1);
+     
+  }
+  .button {
+    background-color: black;
+    color: white;
+  }
+}
+
+

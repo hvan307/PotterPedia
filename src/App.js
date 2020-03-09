@@ -1,9 +1,19 @@
 import React from 'react'
 
+import Hero from './components/common/Hero'
+import CharactersIndex from './components/Characters/CharactersIndex'
+import HousesIndex from './components/Houses/HousesIndex'
+
+
 const App = () => {
-  return (
-    <h1>Hello World</h1>
-  )
+  return <>
+    <Hero />
+    <CharactersIndex />
+    <HousesIndex />
+  </>
 }
+
+
+
 
 export default App
