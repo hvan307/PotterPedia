@@ -7,3 +7,5 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# PotterPedia
+Personal bonus project at General Assembly London
