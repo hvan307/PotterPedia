@@ -1,5 +1,5 @@
 import React from 'react'
-// import HpLogo from './images/HpLogo'
+import hpLogo from '../../images/hp-logo.gold.jpg'
 
 const Hero = () => (
 
@@ -9,9 +9,9 @@ const Hero = () => (
         <div className="container">
           <div className="navbar-brand">
             <figure className="navbar-item">
-              <img src="https://i.dlpng.com/static/png/5520785-create-any-harry-potter-logo-using-adobe-photoshop-harry-harry-potter-logo-1200_497_preview.png" alt="Logo" />
+              <img src={hpLogo} alt="Logo" />
             </figure>
-            <span className="navbar-burger burger" data-target="navbarMenuHeroC">
+            <span className="navbar-burger burger" data-target="navbarMenuHero">
             </span>
 
           </div>
