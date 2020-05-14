@@ -7,7 +7,7 @@ const Spinner = () => {
   return (
     <div className="Circles">
       <Loader
-        type="Circles"
+        type="Audio"
         color="yellow"
         height={100}
         width={100}

@@ -28,23 +28,21 @@ class CharactersIndex extends React.Component {
     }, 3000)
   }
 
-  // filterCharacters(event) {
+  filterCharacters(event) {
 
-  //   console.log(this.state.characters)
-  //   const searchQuery = event.target.value
-  //   const { characters } = this.state
-  //   const filteredCharacters = characters.filter(character => {
-  //     const regex = new RegExp(searchQuery, 'i')
-  //     return character.name.match(regex)
-  //   })
-  //   this.setState({
-  //     query: searchQuery,
-  //     filteredCharacters: filteredCharacters
-  //   })
-    
-  
-
- 
+    console.log(event.target.value)
+    console.log(this.state.characters)
+    const searchQuery = event.target.value
+    const { characters } = this.state
+    const filteredCharacters = characters.filter(character => {
+      const regex = new RegExp(searchQuery, 'i')
+      return character.name.match(regex)
+    })
+    this.setState({
+      query: searchQuery,
+      filteredCharacters: filteredCharacters
+    })
+  }
 
   render() {
     console.log(this.state.filteredCharacters)
@@ -53,11 +51,11 @@ class CharactersIndex extends React.Component {
     }
     return (
       <section className="charactersIndex" id="characters">
-        <SearchForm />
+        <SearchForm query={this.state.query} onChange={(event) => this.filterCharacters(event)} />
         <div className="section">
           <div className="container">
             <div className="columns is-multiline is-mobile">
-              {this.state.characters.map(character => {
+              {this.state.filteredCharacters.map(character => {
                 return <CharacterCard key={character._id} {...character} />
               })}
             </div>
@@ -72,4 +70,4 @@ class CharactersIndex extends React.Component {
 
 export default CharactersIndex
 
-// query={this.state.query} onChange={() => this.filterCharacters(event)}
+// 
