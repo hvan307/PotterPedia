@@ -9,3 +9,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # PotterPedia
 Personal bonus project at General Assembly London
+
+********* work in progress ********
