@@ -1,5 +1,7 @@
 import React from 'react'
-import hpLogo from '../../images/hp-logo.gold.jpg'
+import { Link, withRouter } from 'react-router-dom'
+
+import hpLogo from '/Users/hongvan/development/project-x/src/images/harry-potter-logo-png-clip-art.png'
 
 const Hero = () => (
 
@@ -9,9 +11,11 @@ const Hero = () => (
         <div className="container">
           <div className="navbar-brand">
             <figure className="navbar-item">
-              <img src={hpLogo} alt="Logo" />
+              <Link to="/">
+                <img src={hpLogo} alt="Logo" />
+              </Link>
             </figure>
-            <span className="navbar-burger burger" data-target="navbarMenuHero">
+            <span className="navbar-burger burger" data-target="navbarMenuHeroC">
             </span>
 
           </div>
@@ -62,9 +66,9 @@ const Hero = () => (
       <nav className="tabs is-boxed is-fullwidth">
         <div className="container">
           <ul>
-            <li className="tab has-text-white"><a href="#characters">Characters</a></li>
-            <li className="tab has-text-white"><a href="#houses">Houses</a></li>
-            <li className="tab has-text-white"><a href="#spells">Spells</a></li>
+            <li className="tab has-text-white"><Link to="/characters">Characters</Link></li>
+            <li className="tab has-text-white"><Link to="/houses">Houses</Link></li>
+            <li className="tab has-text-white"><Link to="/spells">Spells</Link></li>
           </ul>
         </div>
       </nav>
@@ -74,5 +78,5 @@ const Hero = () => (
 
 )
 
-export default Hero
+export default withRouter(Hero)
 

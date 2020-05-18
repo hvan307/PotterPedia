@@ -6,15 +6,13 @@
     "axios": "^0.19.2",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.18.3",
-    "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-animated-text": "^0.1.4",
     "react-bulma-components": "3.2.0",
     "react-dom": "^16.13.0",
-    "react-loader-spinner": "^3.1.5",
-    "react-scripts": "3.4.0",
-    "spotify-web-api-js": "^1.2.0"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
