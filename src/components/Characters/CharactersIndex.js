@@ -29,9 +29,6 @@ class CharactersIndex extends React.Component {
   }
 
   filterCharacters(event) {
-
-    console.log(event.target.value)
-    console.log(this.state.characters)
     const searchQuery = event.target.value
     const { characters } = this.state
     const filteredCharacters = characters.filter(character => {
