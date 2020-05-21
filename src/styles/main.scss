@@ -22,13 +22,19 @@ figure {
 
 // HERO
 .Hero {
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgba(218, 165, 32, 0.795);
+  }
+
   .hero-body {
     background-image: url('https://media.giphy.com/media/1ykBr9s2NevYs/giphy.gif');
     background-repeat: no-repeat;
     background-size: cover;
     
     h1 {
-      color: rgba(255, 255, 255, 0.582);
+      color: rgba(218, 165, 32, 0.795);
     }
     
     span {
@@ -96,7 +102,7 @@ section.sorting-hat {
 
   h1 {
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.562);
+    color: rgba(218, 165, 32, 0.795);
   }
 
   h2 {

@@ -1,8 +1,6 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
-import hpLogo from '/Users/hongvan/development/project-x/src/images/harry-potter-logo-png-clip-art.png'
-
 const Hero = () => (
 
   <section className="Hero hero is-medium" id="home">
@@ -11,8 +9,8 @@ const Hero = () => (
         <div className="container">
           <div className="navbar-brand">
             <figure className="navbar-item">
-              <Link to="/">
-                <img src={hpLogo} alt="Logo" />
+              <Link to="/" className="logo" >
+                <p>HP</p>
               </Link>
             </figure>
             <span className="navbar-burger burger" data-target="navbarMenuHeroC">
