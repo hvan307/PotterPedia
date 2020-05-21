@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/PotterPedia/static/css/main.b326dd6e.chunk.css",
+    "main.js": "/PotterPedia/static/js/main.4d2649dd.chunk.js",
+    "main.js.map": "/PotterPedia/static/js/main.4d2649dd.chunk.js.map",
+    "runtime-main.js": "/PotterPedia/static/js/runtime-main.f6c9cb35.js",
+    "runtime-main.js.map": "/PotterPedia/static/js/runtime-main.f6c9cb35.js.map",
+    "static/css/2.2d597ef9.chunk.css": "/PotterPedia/static/css/2.2d597ef9.chunk.css",
+    "static/js/2.19a686c9.chunk.js": "/PotterPedia/static/js/2.19a686c9.chunk.js",
+    "static/js/2.19a686c9.chunk.js.map": "/PotterPedia/static/js/2.19a686c9.chunk.js.map",
+    "index.html": "/PotterPedia/index.html",
+    "precache-manifest.165b6d5a523f4687da20c961eb09566b.js": "/PotterPedia/precache-manifest.165b6d5a523f4687da20c961eb09566b.js",
+    "service-worker.js": "/PotterPedia/service-worker.js",
+    "static/css/2.2d597ef9.chunk.css.map": "/PotterPedia/static/css/2.2d597ef9.chunk.css.map",
+    "static/css/main.b326dd6e.chunk.css.map": "/PotterPedia/static/css/main.b326dd6e.chunk.css.map",
+    "static/js/2.19a686c9.chunk.js.LICENSE.txt": "/PotterPedia/static/js/2.19a686c9.chunk.js.LICENSE.txt",
+    "static/media/gryffindor.gif": "/PotterPedia/static/media/gryffindor.5246eba3.gif",
+    "static/media/houses.gif": "/PotterPedia/static/media/houses.ead9b00c.gif",
+    "static/media/hufflepuff.gif": "/PotterPedia/static/media/hufflepuff.779fdf5a.gif",
+    "static/media/ravenclaw.gif": "/PotterPedia/static/media/ravenclaw.34e32ead.gif",
+    "static/media/slytherin.gif": "/PotterPedia/static/media/slytherin.cd6cb76b.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f6c9cb35.js",
+    "static/css/2.2d597ef9.chunk.css",
+    "static/js/2.19a686c9.chunk.js",
+    "static/css/main.b326dd6e.chunk.css",
+    "static/js/main.4d2649dd.chunk.js"
+  ]
+}
