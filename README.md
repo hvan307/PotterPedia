@@ -8,17 +8,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
-
-### ![GA](https://cloud.githubusercontent.com/assets/40461/8183776/469f976e-1432-11e5-8199-6ac91363302b.png) 
-General Assembly, Software Engineering Immersive
 # PotterPedia
 
 ## Overview
-Personal bonus project at General Assembly London.
-This was a front-end project that utilised a [Harry Potter API](https://www.potterapi.com/) of choice using React.js. We used a CSS framework Bulma to aid in building this web app. Using the Deezer API we created a music-based app where users could search through thousands of artists, albums and song titles — a not dissimilar concept to Spotify or Deezer. A bonus feature we included was allowing users to stream short 30-second song previews. 
+A personal bonus project at General Assembly London.
+This was a front-end project that utilised a [Harry Potter API](https://www.potterapi.com/) and `React.js`. I used CSS framework `Bulma` to aid in building this web app. This apps allow Potterheads to search for their favourite characters and learn more about each and every one of them. You can also learn more about the magic spells, as well as check for details about the Hogwarts houses. 
 
 ## Brief
-- Consume a public API – this could be anything but it must make sense for your project.
+- Consume a public API 
 - Have several components - At least one classical and one functional.
 - The app should include a router - with several "pages".
 - Be deployed online and accessible to the public.
@@ -27,17 +24,16 @@ This was a front-end project that utilised a [Harry Potter API](https://www.pott
 - JavaScript (ES6)
 - React.js
 - HTML, JSX
-- Deezer API
+- Harry Potter API
 - Axios
 - Webpack
 - Git and GitHub
 - Bulma, SCSS
 - GitHub Pages
 
+////////////////////////////////////
 # Approach
-Approaching the project, our first priority was to find a reliable user friendly API. Having settled on a music themed app, we'd narrowed down our API search to Spotify and Deezer. However, the Deezer API proved to be the better option given the streamlined authentication process and clear documentation guidelines.
 
-Next step of our planning process was mapping out the user interface and core functionalities we wanted to include. Our primary objective was to allow users to search the app using multiple filters, such as artist, album, song title. As stretch goal we would want to display current chart hits and allow users to stream song previews.
 
 # App structure
 ## App.js 
