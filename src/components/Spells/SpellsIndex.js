@@ -39,19 +39,21 @@ class SpellsIndex extends React.Component {
   }
 
   render() {
-    return <section className="section">
-      <div className="container">
-        <SearchForm
-          query={this.state.query}
-          onChange={(event) => this.filterSpells(event)}
-        />
-        <div className="columns is-multiline is-mobile">
-          {this.state.filteredSpells.map(spell => {
-            return <SpellCard key={spell._id} {...spell} />
-          })
-          }
+    return <section className="section spells-index">
+      <SearchForm
+        query={this.state.query}
+        onChange={(event) => this.filterSpells(event)}
+      />
+      <section className="section">
+        <div className="container">
+          <div className="columns is-multiline is-mobile">
+            {this.state.filteredSpells.map(spell => {
+              return <SpellCard key={spell._id} {...spell} />
+            })
+            }
+          </div>
         </div>
-      </div>
+      </section>
     </section>
   }
 }

@@ -41,7 +41,7 @@ class CharactersIndex extends React.Component {
   render() {
     console.log(this.state.filteredCharacters)
     return (
-      <section className="charactersIndex" id="characters">
+      <section className="characters-index" id="characters">
         <SearchForm query={this.state.query} onChange={(event) => this.filterCharacters(event)} />
         <div className="section">
           <div className="container">
