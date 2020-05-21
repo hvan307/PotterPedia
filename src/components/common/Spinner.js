@@ -1,10 +1,16 @@
 import React from 'react'
-import houses from '/Users/hongvan/development/project-x/src/images/houses.gif'
+import Loader from 'react-loader-spinner'
 
 const Spinner = () => {
   return (
     <div className="Loading">
-      <img src={houses} alt="houses-loading" />
+      <Loader
+        type="TailSpin"
+        color="yellow"
+        height={100}
+        width={100}
+        timeout={1500} 
+      />
     </div>
   )
 }

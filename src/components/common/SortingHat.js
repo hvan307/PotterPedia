@@ -20,28 +20,22 @@ class SortingHat extends React.Component {
 
   render() {
     const { house } = this.state
-
-    if (house) {
-      return < section className="section" >
-        <div className="container">
-          <div className="sorting-button">
-            <h2>Find out which house you belong to!</h2>
-            <button
-              onClick={() => this.handleClick()}
-            >
-              Click Me!
+    return < section className="section" >
+      <div className="container">
+        <div className="sorting-button">
+          <h2>Find out which house you belong to!</h2>
+          <button
+            onClick={() => this.handleClick()}
+          >
+            Click Me!
           </button>
-          </div>
-          <div className="assorted-house">
-            <h3>{house}</h3>
-          </div>
         </div>
-      </section >
-    } else {
-      return <Spinner />
-    }
+        <div className="assorted-house">
+          <h3>{house}</h3>
+        </div>
+      </div>
+    </section >
   }
-
 }
 
 
