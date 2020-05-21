@@ -21,24 +21,24 @@ const Hero = () => (
             <div className="navbar-end">
 
               <span className="navbar-item">
-                <a href="#home" className="button has-text-grey has-text-centered is-inverted">
+                <Link to="/" className="button has-text-grey has-text-centered is-inverted">
                   <span>Home</span>
-                </a>
+                </Link>
               </span>
               <span className="navbar-item">
-                <a href="#characters" className="button has-text-grey has-text-centered is-inverted">
+                <Link to="/characters" className="button has-text-grey has-text-centered is-inverted">
                   <span>Characters</span>
-                </a>
+                </Link>
               </span>
               <span className="navbar-item">
-                <a href="#houses" className="button has-text-grey has-text-centered is-inverted">
+                <Link to="/houses" className="button has-text-grey has-text-centered is-inverted">
                   <span>Houses</span>
-                </a>
+                </Link>
               </span>
               <span className="navbar-item">
-                <a href="#spells" className="button has-text-grey has-text-centered is-inverted">
+                <Link to="/spells" className="button has-text-grey has-text-centered is-inverted">
                   <span>Spells</span>
-                </a>
+                </Link>
               </span>
             </div>
 
