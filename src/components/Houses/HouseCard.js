@@ -1,6 +1,7 @@
 import React from 'react'
 
 const HouseCard = ({ name, mascot, headOfHouse, houseGhost, founder, values, colors }) => {
+  // const houseValues = { values }
   return (
     <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
       <div className="card">
@@ -23,10 +24,16 @@ const HouseCard = ({ name, mascot, headOfHouse, houseGhost, founder, values, col
             <span>Founder: </span>{founder}
           </h5>
           <h5 className="subtitle">
-            <span>Values: </span>{values}
+            <span>Values: </span>
+            {values.map((value, key) => {
+              return <ul key={key}>{value}</ul>
+            })}
           </h5>
           <h5 className="subtitle">
-            <span>Colours: </span>{colors}
+            <span>Colours: </span>
+            {colors.map((color, key) => {
+              return <ul key={key}>{color}</ul>
+            })}
           </h5>
         </div>
       </div>
