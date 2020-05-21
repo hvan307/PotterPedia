@@ -28,6 +28,7 @@ class SortingHat extends React.Component {
         <div className="sorting-button">
           <h2>But first, find out which house you belong to!</h2>
           <button
+            className="button is-hover is-focus"
             onClick={() => this.handleClick()}
           >
             Click Me!

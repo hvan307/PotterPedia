@@ -8,11 +8,9 @@ body {
   font-family: 'Macondo Swash Caps', cursive;
 }
 
-button {
+button.button {
   font-size: 1rem;
   background-color: rgba(218, 165, 32, 0.795);
-  border-radius: 10px;
-  padding: 10px;
 }
 
 figure {
@@ -48,6 +46,16 @@ figure {
         100%{	color: white;	}
       }
     }
+
+  .hero-foot {
+    li.tab {
+      font-size: 1.5rem;
+    }
+
+    .tabs-link-hover-background-color {
+      color: rgba(218, 165, 32, 0.795) !important;
+    }
+  }
 }
 
 .navbar-item {
