@@ -3,7 +3,6 @@ import React from 'react'
 import axios from 'axios'
 import SpellCard from './SpellCard'
 import SearchForm from '../common/SearchForm'
-import Spinner from '../common/Spinner'
 
 class SpellsIndex extends React.Component {
   constructor() {
@@ -40,24 +39,20 @@ class SpellsIndex extends React.Component {
   }
 
   render() {
-    if (!this.state.spells) {
-      return <Spinner />
-    } else {
-      return <section className="section">
-        <div className="container">
-          <SearchForm
-            query={this.state.query}
-            onChange={(event) => this.filterSpells(event)}
-          />
-          <div className="columns is-multiline is-mobile">
-            {this.state.filteredSpells.map(spell => {
-              return <SpellCard key={spell._id} {...spell} />
-            })
-            }
-          </div>
+    return <section className="section">
+      <div className="container">
+        <SearchForm
+          query={this.state.query}
+          onChange={(event) => this.filterSpells(event)}
+        />
+        <div className="columns is-multiline is-mobile">
+          {this.state.filteredSpells.map(spell => {
+            return <SpellCard key={spell._id} {...spell} />
+          })
+          }
         </div>
-      </section>
-    }
+      </div>
+    </section>
   }
 }
 

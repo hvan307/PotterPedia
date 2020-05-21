@@ -2,7 +2,6 @@ import React from 'react'
 import axios from 'axios'
 
 import CharacterCard from './CharacterCard'
-import Spinner from '../common/Spinner'
 import SearchForm from '../common/SearchForm'
 
 class CharactersIndex extends React.Component {
@@ -16,16 +15,14 @@ class CharactersIndex extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(() => {
-      axios.get('https://www.potterapi.com/v1/characters/?key=$2a$10$KlXbSlQJ6SoRxqxZoBgA1OEZqZ.OleSixEvf5uDMYgxO9ydsmjehm')
-        .then(response => {
-          this.setState({
-            characters: response.data,
-            filteredCharacters: response.data
-          })
+    axios.get('https://www.potterapi.com/v1/characters/?key=$2a$10$KlXbSlQJ6SoRxqxZoBgA1OEZqZ.OleSixEvf5uDMYgxO9ydsmjehm')
+      .then(response => {
+        this.setState({
+          characters: response.data,
+          filteredCharacters: response.data
         })
-        .catch(error => console.log(error))
-    }, 3000)
+      })
+      .catch(error => console.log(error))
   }
 
   filterCharacters(event) {
@@ -43,9 +40,6 @@ class CharactersIndex extends React.Component {
 
   render() {
     console.log(this.state.filteredCharacters)
-    if (!this.state.characters) {
-      return <Spinner />
-    }
     return (
       <section className="charactersIndex" id="characters">
         <SearchForm query={this.state.query} onChange={(event) => this.filterCharacters(event)} />
@@ -63,8 +57,4 @@ class CharactersIndex extends React.Component {
   }
 }
 
-
-
 export default CharactersIndex
-
-// 

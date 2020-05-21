@@ -1,18 +1,35 @@
+// GLOBAL
+
 html {
   background-color: black;
-  }
+}
 
-
-.Hero {
+body {
   font-family: 'Macondo Swash Caps', cursive;
+}
+
+button {
+  font-size: 1rem;
+  background-color: rgba(218, 165, 32, 0.795);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+figure {
+  padding: 10px;
+  margin: 10px;
+}
+
+// HERO
+.Hero {
   .hero-body {
     background-image: url('https://media.giphy.com/media/1ykBr9s2NevYs/giphy.gif');
     background-repeat: no-repeat;
     background-size: cover;
+    
     h1 {
       color: rgba(255, 255, 255, 0.582);
     }
-    
     
     span {
         animation:blinkingText 0.8s infinite;
@@ -27,15 +44,15 @@ html {
     }
 }
 
-
 .navbar-item {
   .button {
     background-color: black;
   }
 }
 
+// Cards
 
-  .card {
+.card {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -43,25 +60,21 @@ html {
     color: white;
     text-align: center;
     
-  }
-  .card-header {
-    font-family: 'Macondo Swash Caps', cursive;
-    padding: 10px;
-    justify-content: center;
-    background-color: rgba(128, 128, 128, 0.438);
-  }
-  .card-content {
-    font-family: 'Courier New', Courier, monospace;
-    span {
-      font-weight: bold;
-    }
-  }
-
-
-.Circles {
-text-align: center;
 }
 
+.card-header {
+  padding: 10px;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.438);
+}
+.card-content {
+  font-family: 'Courier New', Courier, monospace;
+  span {
+    font-weight: bold;
+  }
+}
+
+// Search Forms
 .SearchForm {
   .input {
     color: white;
@@ -74,4 +87,19 @@ text-align: center;
   }
 }
 
+// Sorting Hat
+section.sorting-hat {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  text-align: center;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
 
