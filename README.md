@@ -39,34 +39,20 @@ This was a front-end project that utilised a [Harry Potter API](https://www.pott
 ## App.js 
 ```js
 const App = () => (
-  <BrowserRouter basename="/DevTru">
-    <NavBar />
+  <BrowserRouter>
+    <Hero />
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/artist/:id" component={SingleArtist}/>
-      <Route exact path="/search" component={Search} />
-      <Route exact path="/charts" component={Charts} />
+      <Route path="/characters" component={CharactersIndex} />
+      <Route path="/houses" component={HousesIndex} />
+      <Route path="/spells" component={SpellsIndex} />
+      <Route path="/" component={SortingHat} />
     </Switch>
   </BrowserRouter>
 )
 ```
-In the app.js you can see the fundamental app structure, starting with the BrowserRouter that contains two React components, NavBar and Switch. We decided the NavBar should feature on each page, therefore we created a separate class and placed it outside of the Switch.
-Within the Switch, we can see four endpoints, including:
-- Home 
+In the app.js you can see the fundamental app structure, starting with the BrowserRouter. Switch component with multiple Route components within, and a Hero component placed outside so it's accessible on all endpoints. 
 
-This would be the welcome page from where users can navigate around the site.
-
-- Single Artist
-
-This page allows users to view an expanded artist portfolio with a wider range of songs and material.
-
-- Search
-
-This endpoint will return the user query results from the Deezer API. 
-
-- Chart
-
-This endpoint will display the current Top 10 chart hits. Each card contains album cover, artist, album, and song title.
+## Components
 
 ### NavBar and Search
 
