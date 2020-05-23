@@ -69,7 +69,32 @@ componentDidMount() {
 }
 ```
 ## SearchForm.js
-The `SearchForm.js` is a simple function component and it's used for searching characters and spells in a form of a search bar. The `search` and `onQuery` props are passed down to it from the corresponding class components `CharacterIndex.js` and `SpellsIndex.js` as the user types in the search bar. 
+The `SearchForm.js` is a simple function component and it's used for searching characters and spells using Bulma search bar. The `search` and `onQuery` props are passed down to it from the corresponding class components `CharacterIndex.js` and `SpellsIndex.js` as the user types in the search bar. 
+
+```js
+const SearchForm = ({ query, onChange }) => {
+  return (
+    <div className="SearchForm">
+      <div className="container">
+        <div className="field has-addons">
+          <div className="control is-expanded">
+            <input
+              className="input is-medium"
+              type="search"
+              placeholder="Filter by name, role, house, or species / spell name"
+              value={query}
+              onChange={onChange}
+            />
+          </div>
+          <div className="control">
+            <a className="button is-medium">Search</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+```
 
 ## Screenshots
 ![Welcome-page](src/images/welcome-page.png)
