@@ -68,6 +68,8 @@ componentDidMount() {
     .catch(error => console.log(error))
 }
 ```
+## SearchForm.js
+The `SearchForm.js` is a simple function component and it's used for searching characters and spells in a form of a search bar. The `search` and `onQuery` props are passed down to it from the corresponding class components `CharacterIndex.js` and `SpellsIndex.js` as the user types in the search bar. 
 
 ## Screenshots
 ![Welcome-page](src/images/welcome-page.png)
