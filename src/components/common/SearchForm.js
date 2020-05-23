@@ -9,7 +9,7 @@ const SearchForm = ({ query, onChange }) => {
             <input
               className="input is-medium"
               type="search"
-              placeholder="Filter by name, role, house, or species"
+              placeholder="Filter by name, role, house, or species / spell name"
               value={query}
               onChange={onChange}
             />
