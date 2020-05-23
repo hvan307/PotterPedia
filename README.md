@@ -54,30 +54,19 @@ In the app.js you can see the fundamental app structure, starting with the Brows
 
 ### CharacterIndex.js, HouseIndex.js and SpellsIndex.js
 
-The three components have similar functionalities and make get requests to the corresponding API endpoints to retrieve the information about characters, houses and spells.
-
-
+The three components have similar functionalities and make get requests to the corresponding API endpoints to retrieve the information about characters, houses and spells. The Harry Potter API requires an `authentication key`, which is included in the request endpoint in `componentDidMount()` per documentation advice. 
 
 ```js
-class NavBar extends React.Component {
-
-  constructor() {
-    super()
-    this.state = {
-      search: '',
-      navMobileOpen: false
-    }
-  }
-
-  handleChange(event) {
-    this.setState({ search: event.target.value })
-  }
-
-  handleSubmit(event) {
-    event.preventDefault()
-    this.props.history.push('/search', this.state.search)
-    location.reload()
-  }
+componentDidMount() {
+  axios.get('https://www.potterapi.com/v1/characters/?key=$2a$10$KlXbSlQJ6SoRxqxZoBgA1OEZqZ.OleSixEvf5uDMYgxO9ydsmjehm')
+    .then(response => {
+      this.setState({
+        characters: response.data,
+        filteredCharacters: response.data
+      })
+    })
+    .catch(error => console.log(error))
+}
 ```
 
 ## Screenshots
