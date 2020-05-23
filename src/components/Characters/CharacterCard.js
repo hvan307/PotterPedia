@@ -27,7 +27,7 @@ const CharacterCard = ({ name, role, house, school, ministryOfMagic, orderOfTheP
             <span>Member of the Order of the Phoenix: </span>{orderOfThePhoenix}
           </h5>
           <h5 className="subtitle">
-            <span>Member of Dumbledore`&apos;`s Army: </span>{dumbledoresArmy}
+            <span>Member of Dumbledore&apos;s Army: </span>{dumbledoresArmy}
           </h5>
           <h5 className="subtitle">
             <span>Death Eater: </span>{deathEater}

@@ -50,11 +50,11 @@ const App = () => (
   </BrowserRouter>
 )
 ```
-In the app.js you can see the fundamental app structure, starting with the BrowserRouter. Switch component with multiple Route components within, and a Hero component placed outside so it's accessible on all endpoints. 
+In the app.js you can see the fundamental app structure, starting with the BrowserRouter. The Switch component has multiple Route components within and a Hero component placed outside so it's accessible on all endpoints. 
 
-## Components
+### CharacterIndex.js, HouseIndex.js and SpellsIndex.js
 
-### NavBar and Search
+The three components have similar functionalities and make get requests to the corresponding API endpoints to retrieve the information about characters, houses and spells.
 
 The NavBar and the Search components were no doubt the most challenging elements due to the complexity of having a functional search bar being called and changing state from multiple endpoints. 
 Although it would have been easier to have a separate endpoint with a simple standalone search bar, we felt having search function in the NavBar would ease user experience and provide site continuity.
