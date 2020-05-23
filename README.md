@@ -56,12 +56,8 @@ In the app.js you can see the fundamental app structure, starting with the Brows
 
 The three components have similar functionalities and make get requests to the corresponding API endpoints to retrieve the information about characters, houses and spells.
 
-The NavBar and the Search components were no doubt the most challenging elements due to the complexity of having a functional search bar being called and changing state from multiple endpoints. 
-Although it would have been easier to have a separate endpoint with a simple standalone search bar, we felt having search function in the NavBar would ease user experience and provide site continuity.
 
-Initially, we attempted to carry out the search function within the NavBar component. However, due to the asychronous nature of multiple setState and the complexity of the component as it constisted of a form, burger and both post and get requests, it wasn't performing well. As a result, axios was fetching data using an outdated state that was set by the previous user query. 
 
-To address this issue, we decided to simplify our class component Navbar. We kept the basic navbar elements, as well as the submission form and its handler functions. 
 ```js
 class NavBar extends React.Component {
 
@@ -83,86 +79,15 @@ class NavBar extends React.Component {
     location.reload()
   }
 ```
-We then created a simple class component Search where we would be able to pass the state that was set in the Navbar component using props.location in the axios get request url. This is where the query results are actually being handled, sending a get request to the API endpoint. 
-```js
-class Search extends React.Component {
-
-  constructor() {
-    super()
-    this.state = {
-      data: []
-    }
-  }
-
-  componentDidMount() {
-    axios.get(`https://cors-anywhere.herokuapp.com/api.deezer.com/search?q=${this.props.location.state}`)
-      .then(res => {
-        this.setState({ data: res.data.data })
-      })
-      .catch(err => console.log(err))
-  }
-  ```
-We added location.reload() to handleSubmit() in order to refresh the page content upon query submission, so that the new state is rendered without having to manually refresh the page. 
-
-
-### Top Charts and Artist Pages
-
-Our Charts and SingleArtist features were class components in which we set the state via an axios requests, fetching data from Deezer chart and artist endpoints. 
-
-While using axios, some of our API endpoints became inaccessible due to some configuration problems resulting in incorrect behavior in regards to cross-origin resource sharing policy. The cors-anywhere link allowed us to bypass this issue.
-
-``` js
-class Charts extends React.Component {
-
-  constructor() {
-    super()
-    this.state = {
-      data: []
-    }
-  }
-
-  componentDidMount() {
-    axios.get('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart')
-      .then(res => {
-        this.setState({ data: res.data.tracks.data })
-      })
-  }
-```
-Returning an array of 10 track objects, we were able to map over each element and extract the required data for each display card. 
-
-``` js
-class SingleArtist extends React.Component {
-
-  constructor() {
-    super()
-    this.state = {
-      data: {},
-      trackList: []
-    }
-  }
-
-  componentDidMount() {
-    const id = this.props.match.params.id
-    axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}`)
-      .then(res => {
-        this.setState({ data: res.data })
-      })
-    axios.get(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${id}/top?limit=50`)
-      .then(res => {
-        this.setState({ trackList: res.data.data })
-      })
-  }
-```
-Similar to the chart request, for the single artist component, we mapped over the returned data to display the desired content, including further artist info and a discography of song titles.
-
-In order for the user to play the song previews, we obtained the preview recording from the returned data and placed it in an audio tag.
 
 ## Screenshots
-![DevTruDesktop](src/styles/images/devtru-desktop.png)
-![DevTruMobile](src/styles/images/devtru-mobile.png)
-![Charts](src/styles/images/topcharts.png)
-![Search](src/styles/images/searchresults.png)
-![SingleArtist](src/styles/images/single-artist.png)
+![Welcome-page](src/images/welcome-page.png)
+![Sortinghat-Hufflepuff](src/images/sortinghat-hufflepuff.png)
+![House-crests](src/images/house-crests.png)
+![House-index](src/images/housesindex.png)
+![Character-search](src/images/character-search.png)
+![Spells](src/images/spellsindex.png)
+![Spell-search](src/images/spell-search.png)
 
 ## Potential Future Features
 
