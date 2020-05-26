@@ -98,6 +98,7 @@ const SearchForm = ({ query, onChange }) => {
 
 ## Screenshots
 ![Welcome-page](src/images/welcome-page.png)
+// Image is a gif that shows all house crests and doesn't represent house you will get assigned to, the screenshot happened to capture Ravenclaw, which may seem like a mismatch to the Hufflepuff result. 😅
 ![Sortinghat-Hufflepuff](src/images/sortinghat-hufflepuff.png)
 ![House-crests](src/images/house-crests.png)
 ![House-index](src/images/housesindex.png)
@@ -107,21 +108,17 @@ const SearchForm = ({ query, onChange }) => {
 
 ## Potential Future Features
 
-- Genre-specific top charts
-- Favourite song/artist section
+
 
 ## Wins
-- Having just learnt React, creating a functional search bar in the navbar that is displayed and accessible on all endpoints was more complex than what I had done in class up to that point in time. Being able to eventually accomplish that was a big win.
-- Another win was our app's bonus feature which allows the user to sample a song preview for 15seconds. Given the amount of time allowed for this project, it was our stretch goal at the start of the project.
-- Creating a responsive design for the app and the burger navbar. 
+
 
 ## Lessons Learned
 
-- Deployment
-This was a main learning experience, as our project's navbar search engine is not functional after deploying it to GitHub pages. Even though we were warned of deployment challenges, as often with each project and its eccentricities, some functionalities are compromised, we did not anticipate our main feature to be affected. This goes to show that for projects with time constraints like this, sometimes it's better to focus on creating simple features that will be robust, rather than doing to many things at once. 
+
 
 ## Other challenges
-We used a Bulma CSS framework for the styling, which proved to be a quick and efficient solution to styling the project, but found it to be fairy restrictive when trying to implement more creative elements.
+
 
 
 
