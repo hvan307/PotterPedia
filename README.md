@@ -1,14 +1,7 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) GA London React Template
-
-`yarn start` to run the development server
-
-`yarn build` to create a build directory
+# PotterPedia
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
-# PotterPedia
 
 ## Overview
 A personal bonus project at General Assembly London.
@@ -105,23 +98,10 @@ const SearchForm = ({ query, onChange }) => {
 ![Spells](src/images/spellsindex.png)
 ![Spell-search](src/images/spell-search.png)
 
-## Potential Future Features
+## Getting started
 
-- Genre-specific top charts
-- Favourite song/artist section
+`yarn start` to run the development server
 
-## Wins
-- Having just learnt React, creating a functional search bar in the navbar that is displayed and accessible on all endpoints was more complex than what I had done in class up to that point in time. Being able to eventually accomplish that was a big win.
-- Another win was our app's bonus feature which allows the user to sample a song preview for 15seconds. Given the amount of time allowed for this project, it was our stretch goal at the start of the project.
-- Creating a responsive design for the app and the burger navbar. 
-
-## Lessons Learned
-
-- Deployment
-This was a main learning experience, as our project's navbar search engine is not functional after deploying it to GitHub pages. Even though we were warned of deployment challenges, as often with each project and its eccentricities, some functionalities are compromised, we did not anticipate our main feature to be affected. This goes to show that for projects with time constraints like this, sometimes it's better to focus on creating simple features that will be robust, rather than doing to many things at once. 
-
-## Other challenges
-We used a Bulma CSS framework for the styling, which proved to be a quick and efficient solution to styling the project, but found it to be fairy restrictive when trying to implement more creative elements.
-
+`yarn build` to create a build directory
 
 
