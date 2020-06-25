@@ -1,7 +1,5 @@
+
 # PotterPedia
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Overview
 A personal bonus project at General Assembly London.
@@ -91,6 +89,7 @@ const SearchForm = ({ query, onChange }) => {
 
 ## Screenshots
 ![Welcome-page](src/images/welcome-page.png)
+// Image is a gif that shows all house crests and doesn't represent house you will get assigned to, the screenshot happened to capture Ravenclaw, which may seem like a mismatch to the Hufflepuff result. 😅
 ![Sortinghat-Hufflepuff](src/images/sortinghat-hufflepuff.png)
 ![House-crests](src/images/house-crests.png)
 ![House-index](src/images/housesindex.png)

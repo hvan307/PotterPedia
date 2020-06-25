@@ -19,5 +19,6 @@ const App = () => (
     </Switch>
   </BrowserRouter>
 )
+console.log('hello')
 
 export default App
