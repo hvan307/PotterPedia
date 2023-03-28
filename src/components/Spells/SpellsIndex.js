@@ -15,7 +15,7 @@ class SpellsIndex extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('https://www.potterapi.com/v1/spells/?key=$2a$10$KlXbSlQJ6SoRxqxZoBgA1OEZqZ.OleSixEvf5uDMYgxO9ydsmjehm')
+    axios.get('https://hp-api.onrender.com/api/spells')
       .then(resp => {
         this.setState({
           spells: resp.data,
@@ -30,7 +30,7 @@ class SpellsIndex extends React.Component {
     const { spells } = this.state
     const filteredSpells = spells.filter(spell => {
       const regex = new RegExp(searchQuery, 'i')
-      return spell.spell.match(regex)
+      return spell.name.match(regex)
     })
     this.setState({
       query: searchQuery,

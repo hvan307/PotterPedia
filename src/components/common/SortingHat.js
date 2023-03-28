@@ -1,7 +1,7 @@
 import React from 'react'
 
 import axios from 'axios'
-import HousesGif from '/Users/hongvan/development/project-x/src/images/houses.gif'
+import HousesGif from '/Users/hongvan/Desktop/Development/PotterPedia/src/images/houses.gif'
 
 class SortingHat extends React.Component {
   constructor() {

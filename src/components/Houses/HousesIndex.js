@@ -2,10 +2,10 @@ import React from 'react'
 import axios from 'axios'
 
 import HouseCard from './HouseCard'
-import Gryffindor from '/Users/hongvan/development/project-x/src/images/gryffindor.gif'
-import Ravenclaw from '/Users/hongvan/development/project-x/src/images/ravenclaw.gif'
-import Slytherin from '/Users/hongvan/development/project-x/src/images/slytherin.gif'
-import Hufflepuff from '/Users/hongvan/development/project-x/src/images/hufflepuff.gif'
+import Gryffindor from '/Users/hongvan/Desktop/Development/PotterPedia/src/images/gryffindor.gif'
+import Ravenclaw from '/Users/hongvan/Desktop/Development/PotterPedia/src/images/ravenclaw.gif'
+import Slytherin from '/Users/hongvan/Desktop/Development/PotterPedia/src/images/slytherin.gif'
+import Hufflepuff from '/Users/hongvan/Desktop/Development/PotterPedia/src/images/hufflepuff.gif'
 
 class HousesIndex extends React.Component {
   constructor() {

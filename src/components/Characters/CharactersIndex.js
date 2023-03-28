@@ -15,7 +15,7 @@ class CharactersIndex extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('https://www.potterapi.com/v1/characters/?key=$2a$10$KlXbSlQJ6SoRxqxZoBgA1OEZqZ.OleSixEvf5uDMYgxO9ydsmjehm')
+    axios.get('https://hp-api.onrender.com/api/characters')
       .then(response => {
         this.setState({
           characters: response.data,

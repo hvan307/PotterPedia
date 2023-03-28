@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const CharacterCard = ({ name, role, house, school, ministryOfMagic, orderOfThePhoenix, dumbledoresArmy, deathEater, bloodStatus, species }) => {
+const CharacterCard = ({ image, name, actor, house, dateOfBirth, ancestry, patronus, species }) => {
   return (
     <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
       <div className="card">
@@ -12,28 +12,22 @@ const CharacterCard = ({ name, role, house, school, ministryOfMagic, orderOfTheP
         </div>
         <div className="card-content">
           <h5 className="subtitle">
-            <span>Role: </span>{role}
+            <img src={image} alt={name} style={{ height: 150 + 'px' }}></img>
+          </h5>
+          <h5 className="subtitle">
+            <span>Played by: </span>{actor}
           </h5>
           <h5 className="subtitle">
             <span>House: </span>{house}
           </h5>
           <h5 className="subtitle">
-            <span>School: </span>{school}
+            <span>Date of birth: </span>{dateOfBirth}
           </h5>
           <h5 className="subtitle">
-            <span>Ministry of Magic: </span>{ministryOfMagic}
+            <span>Blood Status: </span>{ancestry}
           </h5>
           <h5 className="subtitle">
-            <span>Member of the Order of the Phoenix: </span>{orderOfThePhoenix}
-          </h5>
-          <h5 className="subtitle">
-            <span>Member of Dumbledore&apos;s Army: </span>{dumbledoresArmy}
-          </h5>
-          <h5 className="subtitle">
-            <span>Death Eater: </span>{deathEater}
-          </h5>
-          <h5 className="subtitle">
-            <span>Blood Status: </span>{bloodStatus}
+            <span>Patronus: </span>{patronus}
           </h5>
           <h5 className="subtitle">
             <span>Species: </span>{species}
